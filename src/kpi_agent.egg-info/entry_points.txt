@@ -1,0 +1,2 @@
+[console_scripts]
+kpi-agent = kpi_agent.cli:main

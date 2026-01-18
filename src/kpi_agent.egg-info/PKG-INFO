@@ -1,3 +1,13 @@
+Metadata-Version: 2.4
+Name: kpi-agent
+Version: 0.1.0
+Summary: Agent that extracts project-scope-relevant value realisation KPIs from requirement documents.
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pypdf
+Requires-Dist: python-docx
+Requires-Dist: rich
+
 # Value Realisation KPI Agent
 
 An offline-friendly agent that analyzes an uploaded **requirements document / HLDD / project charter**
@@ -17,7 +27,7 @@ It produces KPIs across:
 
 ```bash
 cd /workspace
-python3 -m venv .venv
+python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
@@ -25,13 +35,13 @@ pip install -r requirements.txt
 ### 2) Run
 
 ```bash
-python3 -m kpi_agent --input /path/to/your/document.pdf --format markdown
+python -m kpi_agent --input /path/to/your/document.pdf --format markdown
 ```
 
 Other formats:
 
 ```bash
-python3 -m kpi_agent --input /path/to/your/document.docx --format json
+python -m kpi_agent --input /path/to/your/document.docx --format json
 ```
 
 ## What it does
