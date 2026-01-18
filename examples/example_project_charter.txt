@@ -1,0 +1,22 @@
+PROJECT CHARTER
+
+OBJECTIVES
+- Automate invoice processing for AP team (OCR + validation + workflow approvals).
+- Reduce manual data entry errors and rework.
+- Improve turnaround time for invoice approvals.
+- Provide audit trail for approvals and segregation of duties.
+
+IN SCOPE
+- Ingest invoices via email and portal upload.
+- Extract key fields and validate against PO and vendor master data.
+- Approval workflow with SLA and escalation.
+- Reporting dashboard for cycle time and exception rates.
+
+OUT OF SCOPE
+- Replacing the ERP.
+- Changing vendor onboarding process.
+
+NON-FUNCTIONAL REQUIREMENTS
+- Availability 99.9%
+- Access controls (role-based), audit logs retained for 7 years.
+
