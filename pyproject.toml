@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kpi-agent"
+version = "0.1.0"
+description = "Agent that extracts project-scope-relevant value realisation KPIs from requirement documents."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pypdf",
+  "python-docx",
+  "rich",
+]
+
+[project.scripts]
+kpi-agent = "kpi_agent.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
